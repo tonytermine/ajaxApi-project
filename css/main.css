@@ -1,0 +1,296 @@
+/*
+My Custom CSS
+=============
+
+Author:  Tony Termine
+Updated: May 2014
+Notes:   main.css for apiHack-project
+
+*/
+
+/* --------------------------------------
+	Header Elements
+	-------------------------------------- */
+	.header-container {
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.logo-container {
+
+		display: inline-block;
+		padding: 20px;
+	}
+
+	.logo {
+		color: #55acee;
+		display: inline;
+		padding: 0 2px 0 0;
+	}
+
+	.logo-title {
+	  color: #55acee;
+	  display: inline-block;
+	  font-family: 'Londrina Solid', Arial, sans-serif;
+	  font-size: 4.6em;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+/* --------------------------------------
+	Body Elements
+	-------------------------------------- */
+
+	.main-container {
+		min-height: 520px;
+		height: auto;
+		max-height: 100%;
+		overflow: scroll;
+	}
+
+	.main {
+		padding: 30px 0 0 0;
+	}
+
+	form {
+		padding: 20px 0;
+		width: 100%;
+		margin: 0 auto 50px auto;
+		text-align: center;
+		background: url("../img/squairy_light.png") top left repeat;
+		border-radius: 10px;
+	}
+
+	.main-input {
+		width: 60%;
+		height: 46px;
+		margin: 0 auto;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		font-size: 1.5em;
+		border-radius: 5px;
+	}
+
+	form p {
+		font-family: 'Londrina Solid', Arial, sans-serif;
+		font-size: 1.8em;
+		display: inline-block;
+		padding-right: .5%;
+	}
+
+	.one {
+		color: #0063db;
+	}
+
+	.two {
+		color: #fc1685;
+	}
+
+	.instructions,
+	.instructions-2 {
+		font-family: 'Oswald', Arial, sans-serif;
+		font-size: 1.4em;
+		padding: 0;
+		margin: 0;
+	}
+
+	.instructions-2 {
+		display: none;
+	}
+
+	.main-input:focus {
+		outline-color: #66757f;
+	}
+
+	.grab-button,
+	.reset-button {
+		color: white;
+		font-family: 'Oswald', Arial, sans-serif;
+		font-size: 1.4em;
+		font-weight: bold;
+		border-radius: 5px;
+		padding: 10px;
+		width: 10%;
+		border: none;
+	}
+
+	.grab-button {
+		margin-left: 5px;
+	}
+
+	.grab-button:active {
+		margin-top: 2px;
+	}
+
+	.grab-button:focus {
+		outline: none;
+	}
+
+	.reset-button:active {
+		margin-top: 2px;
+	}
+
+	.reset-button:focus {
+		outline: none;
+	}
+
+	.result-list {
+		display: inline-block;
+		list-style: none;
+		font-family: Arial, sans-serif;
+		font-size: 1.4em;
+		font-weight: bold;
+		text-align: center;
+		padding: 0;
+		position: relative;
+		margin: 10px auto 0 auto;
+		width: 95%;
+	}
+
+	.result-list li {
+		display: inline-block;
+	}
+
+	.result-list img {
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0 15px 20px;
+	}
+
+	.footer-container,
+	.grab-button,
+	.reset-button,
+	.print-button {
+		background: #55acee;
+	}
+
+
+/* --------------------------------------
+	Footer Elements
+	-------------------------------------- */
+	.footer-container {
+		border-top: 20px solid #66757f;
+	}
+
+	.footer-container footer {
+			color: white;
+			padding: 20px 0;
+			min-height: 100px;
+	}
+
+	.footer-text {
+		color: white;
+		font-family: 'Londrina Solid', cursive;
+		font-size: 1.4em;
+		text-align: center;
+		margin: 0;
+	}
+
+	span {
+		vertical-align: top;
+	}
+
+/* --------------------------------------
+	Global Styles
+	-------------------------------------- */
+
+	html, body {
+		min-height: 100%;
+	}
+
+	body {
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizelegibility;
+	}
+
+	form {
+		-webkit-box-shadow: 0 5px 10px #aaa;
+			 -moz-box-shadow: 0 5px 10px #aaa;
+						box-shadow: 0 5px 10px #aaa;
+	}
+
+	.wrapper {
+		width: 90%;
+		margin: 0 5%;
+	}
+
+	.clearfix:before,
+	.clearfix:after {
+		content: " ";
+		display: table;
+	}
+
+	.clearfix:after {
+		clear: both;
+	}
+
+	.clearfix {
+		*zoom: 1;
+	}
+
+/* ==========================================================================
+	 Media Queries
+	 ========================================================================== */
+
+@media only screen and (min-width: 1px) and (max-width: 700px) {
+
+	.logo {
+		font-size: 2.8em;
+	}
+
+	.logo-title {
+		font-size: 3.5em;
+	}
+
+	.instructions,
+	.instructions-2 {
+		font-size: 1em;
+	}
+
+	.main-input {
+		margin: 0 auto;
+		width: 85%;
+	}
+
+	.grab-button,
+	.reset-button {
+		margin: 10px auto 0 auto;
+		padding: 10px;
+		width: 100px;
+	}
+
+	.grab-button {
+		margin-right: 15px;
+	}
+
+	.reset-button:active {
+		margin-top: 10px;
+	}
+
+	.list {
+		width: 100%;
+		padding: 0;
+	}
+
+	.list-items {
+		font-size: 1.2em;
+	}
+
+	.footer-text {
+		font-size: 1em;
+	}
+}
+
+	@media only screen and (min-width: 1140px) {
+/* ===============
+		Maximal Width
+	 =============== */
+
+	.wrapper {
+		width: 1026px; /* 1140px - 10% for margins */
+		margin: 0 auto;
+	}
+}
